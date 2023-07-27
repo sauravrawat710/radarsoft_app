@@ -39,12 +39,11 @@ class CustomerService {
           "email": email,
         },
       );
-      print(response.statusCode);
+
       if (response.statusCode == 201) {
         // If the server returns a 201 OK response, Customer got created.
         return true;
       } else {
-        print('dfnvldfindoifv');
         throw Exception('Failed to create customer');
       }
     } on DioException catch (e) {
