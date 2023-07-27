@@ -38,7 +38,6 @@ class CustomerListScreen extends StatelessWidget {
                       Text('Phone Number: ${customer.phoneNumber}'),
                     ],
                   ),
-                  onTap: () {},
                 );
               },
             ),

@@ -19,7 +19,6 @@ class CreateCustomerFormState extends State<CreateCustomerForm> {
     if (_formKey.currentState!.saveAndValidate()) {
       // Form is valid, perform the action here (e.g., save to database).
       Map<String, dynamic> formData = _formKey.currentState!.value;
-      print(formData);
       setState(() {
         _isCreating = true;
       });
